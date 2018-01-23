@@ -1,0 +1,17 @@
+body {
+  background: linear-gradient(to bottom, rgba(167,199,220,1) 0%,rgba(133,178,211,1) 100%);
+}
+
+#balance, #acctManage {
+  display: none;
+}
+
+.panel {
+  width: 450px;
+  margin: auto;
+}
+
+button#logout {
+  margin-top: 10px;
+  float: left;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Bank Account</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron text-center">
+        <h1>Epicodus Credit Union</h1>
+      </div>
+      <div class="panel panel-primary text-center" id="newAcct">
+        <div class="panel-heading">
+          <h3 class="panel-title">New Account</h3>
+        </div>
+        <div class="panel-body">
+          <form id="newAcctForm">
+            <div class="form-group">
+              <label for="acctName">Enter Name</label>
+              <input type="text" class="form-control" id="acctName">
+            </div>
+            <div class="form-group">
+              <label for="acctInitDeposit">Enter Initial Deposit Amount</label>
+              <input type="text" class="form-control" id="acctInitDeposit">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="well" id="balance">
+      </div>
+
+      <div class="panel panel-primary text-center" id="acctManage">
+        <div class="panel-heading">
+          <h3 class="panel-title">Manage Funds</h3>
+        </div>
+        <div class="panel-body">
+          <form id="manageAcctForm">
+            <div class="form-group">
+              <label for="acctDeposit">Enter Deposit Amount</label>
+              <input type="text" class="form-control" id="acctDeposit">
+            </div>
+            <div class="form-group">
+              <label for="acctWithdrawal">Enter Withdrawal Amount</label>
+              <input type="text" class="form-control" id="acctWithdrawal">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

@@ -35,6 +35,8 @@ $(document).ready(function() {
     console.log(newAccount);
     $("#balance").text(newAccount.name + ", your current balance is $" + newAccount.amount.toFixed(2));
     $("#newAcct").hide();
+    $("#myCarousel").hide();
+    $("#columns").hide();
     $("#balance").show();
     $("#acctManage").show();
   });
@@ -52,9 +54,10 @@ $(document).ready(function() {
 
   $("button#logout").click(function() {
     $("#newAcct").show();
+    $("#myCarousel").show();
+    $("#columns").show();
     $("#balance").hide();
     $("#acctManage").hide();
-
     resetFields();
 
   });
